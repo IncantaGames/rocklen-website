@@ -26,4 +26,4 @@ You must have `yarn` installed globally in order to use this build environment.
 
 This repository does not have a license, which implies SeesePlusPlus LLC reserves all rights of the work therein. The repository was forked off of [version 5.0.9 of Start Bootstrap Grayscale](https://github.com/BlackrockDigital/startbootstrap-grayscale/releases/tag/v5.0.9) template; the forked version was released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/e9e86f489b093e96de5c23609fd2226dcb12c85a/LICENSE) license.
 
-Copyright 2020 SeesePlusPlus LLC
+Copyright 2020 SeesePlusPlus LLC. All Rights Reserved.
