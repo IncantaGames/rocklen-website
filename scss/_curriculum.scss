@@ -1,5 +1,6 @@
-.projects-section {
+.curriculum-section {
   padding: 10rem 0;
+  background: linear-gradient(to bottom, $black 0%,#{fade-out($black, .1)} 75%,#{fade-out($black, .2)} 100%);
   .featured-text {
     padding: 2rem;
     @media (min-width: 992px) {

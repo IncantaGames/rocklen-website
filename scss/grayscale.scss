@@ -1,16 +1,16 @@
 @import 'variables.scss';
 @import 'mixins.scss';
 @import 'navbar.scss';
-@import 'masthead.scss';
 @import 'buttons.scss';
-@import 'about.scss';
-@import 'projects.scss';
-@import 'signup.scss';
+@import 'mission.scss';
+@import 'curriculum.scss';
+@import 'apply.scss';
 @import 'contact.scss';
 
 body {
   font-family: 'Nunito';
   letter-spacing: 0.0625em;
+  background-color: $offwhite;
 }
 
 a {
@@ -35,5 +35,5 @@ a {
 }
 
 footer {
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
