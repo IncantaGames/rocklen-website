@@ -3,7 +3,8 @@
   "name": "rocklen.institute",
   "version": "1.0.0-beta.0",
   "scripts": {
-    "start": "npx gulp watch"
+    "start": "npx gulp watch",
+    "build": "npx gulp"
   },
   "description": "Source code for the https://rocklen.institute website.",
   "keywords": [
