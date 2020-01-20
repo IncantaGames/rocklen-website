@@ -1,6 +1,7 @@
 #mainNav {
   min-height: 56px;
   background-color: $offwhite;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
   .navbar-toggler {
     font-size: 80%;
     padding: 0.75rem;
@@ -18,6 +19,14 @@
     #logo {
       height: 2.8em;
     }
+
+    &.vr-game {
+      font-size: 0.7rem;
+      font-weight: normal !important;
+      position: absolute;
+      left: 4rem;
+      top: 3.2rem;
+    }
   }
   .navbar-nav {
     .nav-item {
@@ -33,15 +42,25 @@
       }
     }
   }
+  &.navbar-shrink {
+    box-shadow: 0 1px 20px 0 rgba(46,61,73,.2);
+  }
   @media (min-width: 992px) {
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
     background-color: $offwhite;
-    transition: background-color 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
     .navbar-brand {
       padding: .5rem 0;
       color: $black;
+
+      &.vr-game {
+        position: initial;
+        left: initial;
+        top: initial;
+        padding-top: 1.2rem;
+        padding-bottom: 0;
+      }
     }
     .nav-link {
       transition: none;
@@ -59,9 +78,6 @@
         outline: none;
         border-bottom: 0.25rem solid $primary;
       }
-    }
-    &.navbar-shrink {
-      box-shadow: 0 1px 20px 0 rgba(46,61,73,.2);
     }
   }
 }

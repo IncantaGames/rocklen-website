@@ -8,13 +8,14 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Rocklen Institute - The School of Magic</title>
+  <title>Rocklen Institute - A VR Game About Magic</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  
+  <script src="https://kit.fontawesome.com/88cfbfc5f0.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
@@ -42,7 +43,7 @@
             <a class="nav-link js-scroll-trigger" href="#curriculum">Curriculum</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#apply">Apply</a>
+            <a class="nav-link js-scroll-trigger" href="#apply">Apply / Play</a>
           </li>
         </ul>
       </div>
@@ -55,65 +56,39 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2 class="text-black mb-4">Mission</h2>
-          <p class="text-black-50">
-            Rocklen Institute strives to provide a safe environment for students and researchers to study and practice arcane energy. Providing
+          <p class="text-black">
+            Rocklen Institute staffs the finest arcane researchers who challenge students daily to become the most balanced, ethical, and powerful magicians they can be. Classes are structured to tailor every unique individual's needs, and each student will be given the tools and opportunities to excel in their studies of harnessing arcane energy.
           </p>
         </div>
       </div>
-      <img src="img/ipad.png" class="img-fluid" alt="">
     </div>
   </section>
 
   <!-- Curriculum Section -->
-  <section id="curriculum" class="curriculum-section bg-light">
+  <section id="curriculum" class="curriculum-section">
     <div class="container">
 
-      <!-- Featured Project Row -->
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
-        </div>
-        <div class="col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left">
-            <h4>Shoreline</h4>
-            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
-          </div>
-        </div>
-      </div>
+      <h2 class="text-black mb-4 text-center">Curriculum</h2>
 
-      <!-- Project One Row -->
-      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
+      <div class="d-flex">
+        <div>
+          <i class="fad fa-flask-potion fa-4x mb-2 text-primary"></i>
+          <span>Potions</span>
         </div>
-        <div class="col-lg-6">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Misty</h4>
-                <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
-                <hr class="d-none d-lg-block mb-0 ml-0">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Project Two Row -->
-      <div class="row justify-content-center no-gutters">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+        <div>
+          <i class="fad fa-hand-holding-magic fa-4x mb-2 text-primary"></i>
+          <span>Spell Casting</span>
         </div>
-        <div class="col-lg-6 order-lg-first">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">Mountains</h4>
-                <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
-                <hr class="d-none d-lg-block mb-0 mr-0">
-              </div>
-            </div>
-          </div>
+
+        <div>
+          <i class="fad fa-broom fa-4x mb-2 text-primary"></i>
+          <span>Enchantments</span>
+        </div>
+
+        <div>
+          <i class="fad fa-wand-magic fa-4x mb-2 text-primary"></i>
+          <span>Totems</span>
         </div>
       </div>
 
@@ -127,14 +102,20 @@
         <div class="col-md-10 col-lg-8 mx-auto text-center">
 
           <i class="fas fa-graduation-cap fa-2x mb-2 text-primary"></i>
-          <h2 class="text-black mb-5">Get Notified When Applications are Open!</h2>
+          <h2 class="text-black mb-5">Get Notified When Applications Are Open!</h2>
 
           <p class="mb-0 text-black-75">Rocklen Institute is still preparing for the first class of students. Signup below to receive notifications when applications are open.</p>
           <br/>
 
-          <form class="form-inline d-flex">
-            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+          <form class="">
+            <div class="form-inline">
+              <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+              <button type="submit" class="btn btn-primary mx-auto">Subscribe</button><br />
+            </div>
+            <div class="form-inline general-updates">
+              <input type="checkbox" id="generalSignup" checked="checked" />
+              <label for="generalSignup">Receive general updates</label>
+            </div>
           </form>
 
         </div>

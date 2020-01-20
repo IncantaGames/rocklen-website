@@ -8,6 +8,7 @@
 #mainNav {
   min-height: 56px;
   background-color: #f5f5f5;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 #mainNav .navbar-toggler {
@@ -31,6 +32,14 @@
   height: 2.8em;
 }
 
+#mainNav .navbar-brand.vr-game {
+  font-size: 0.7rem;
+  font-weight: normal !important;
+  position: absolute;
+  left: 4rem;
+  top: 3.2rem;
+}
+
 #mainNav .navbar-nav .nav-item:hover {
   color: fade(white, 80%);
   outline: none;
@@ -42,17 +51,27 @@
   background-color: transparent;
 }
 
+#mainNav.navbar-shrink {
+  box-shadow: 0 1px 20px 0 rgba(46, 61, 73, 0.2);
+}
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
     background-color: #f5f5f5;
-    transition: background-color 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
   }
   #mainNav .navbar-brand {
     padding: .5rem 0;
     color: #161616;
+  }
+  #mainNav .navbar-brand.vr-game {
+    position: initial;
+    left: initial;
+    top: initial;
+    padding-top: 1.2rem;
+    padding-bottom: 0;
   }
   #mainNav .nav-link {
     transition: none;
@@ -70,9 +89,6 @@
     color: #2ba0f3;
     outline: none;
     border-bottom: 0.25rem solid #2ba0f3;
-  }
-  #mainNav.navbar-shrink {
-    box-shadow: 0 1px 20px 0 rgba(46, 61, 73, 0.2);
   }
 }
 
@@ -109,11 +125,11 @@
 
 .mission-section p {
   margin-bottom: 5rem;
+  text-align: justify;
 }
 
 .curriculum-section {
-  padding: 10rem 0;
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+  padding: 5rem 0;
 }
 
 .curriculum-section .featured-text {
@@ -160,6 +176,15 @@
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   border: 0;
+}
+
+.apply-section .general-updates {
+  padding-top: 1rem;
+}
+
+.apply-section .general-updates label {
+  margin-left: 0.5rem;
+  font-weight: bold;
 }
 
 .contact-section .social a {
