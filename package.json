@@ -31,7 +31,6 @@
     "url": "https://github.com/seeseplusplus/rocklen.institute.git"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "5.10.2",
     "bootstrap": "4.3.1",
     "jquery": "3.4.1",
     "jquery.easing": "^1.4.1"
