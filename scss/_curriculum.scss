@@ -19,4 +19,15 @@
       }
     }
   }
+  .subjects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .subject {
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
 }

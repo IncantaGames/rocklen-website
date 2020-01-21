@@ -159,6 +159,19 @@
   }
 }
 
+.curriculum-section .subjects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.curriculum-section .subjects .subject {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 .apply-section {
   padding: 7.5rem 0;
   background-position: center;
