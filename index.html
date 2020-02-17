@@ -107,16 +107,41 @@
           <p class="mb-0 text-black-75">Rocklen Institute is still preparing for the first class of students. Signup below to receive notifications when applications are open.</p>
           <br/>
 
-          <form class="">
-            <div class="form-inline">
-              <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-              <button type="submit" class="btn btn-primary mx-auto">Subscribe</button><br />
+          <div data-mailtrain-subscription-widget mailtrain-url="https://lists.seeseplus.plus" cid="xzuuz-Ak">
+            <form class="">
+              <input type="hidden" class="tz-detect" name="tz" value="">
+              <input type="hidden" class="sub-time" name="sub" value="">
+              <input type="hidden" name="address" value="">
+              <input type="hidden" value="<present>" name="MERGE_GENERIC_UPDATES">
+              <div class="form-inline">
+                <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" name="EMAIL" placeholder="Enter email address...">
+                <button type="submit" class="btn btn-primary mx-auto">Subscribe</button><br />
+              </div>
+              <div class="form-inline general-updates">
+                <input type="checkbox" id="generalSignup" name="MERGE_RECEIVE_GENERAL_UPDATES" checked="checked" />
+                <label for="generalSignup">Receive general updates</label>
+              </div>
+            </form>
+
+            <div class="status"></div>
+            <div style="display: none;">
+              <div class="spinner" data-status-template="spinner">
+                <p>Sending ...</p>
+              </div>
+              <div class="info" data-status-template="already-subscribed">
+                <p>It looks like you are already subscribed to this list.</p>
+              </div>
+              <div class="success" data-status-template="confirm-notice">
+                <h4 style="font-weight: bold;">Please Verify Your Email</h4>
+                <p>We need to confirm your email address before we can send you updates. Please click the link in the email we just sent you. It may be in your spam folder.</p>
+              </div>
+              <div class="error" data-status-template="error">
+                <p>{message}</p>
+              </div>
             </div>
-            <div class="form-inline general-updates">
-              <input type="checkbox" id="generalSignup" checked="checked" />
-              <label for="generalSignup">Receive general updates</label>
-            </div>
-          </form>
+          </div>
+
+          <script src="/js/email-list.js"></script>
 
         </div>
       </div>
