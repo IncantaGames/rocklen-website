@@ -21,7 +21,7 @@ const banner = ['/*!\n',
   ' * <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
   ' * Copyright 2013-2019 Start Bootstrap\n',
   ' * Copyright 2020-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-  ' * All Rights Reserved (https://github.com/SeesePlusPlus/rocklen.institute#copyright-and-license)\n',
+  ' * All Rights Reserved (https://github.com/IncantaGames/rocklen-website#copyright-and-license)\n',
   ' */\n',
   '\n'
 ].join('');

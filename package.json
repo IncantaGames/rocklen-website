@@ -1,12 +1,12 @@
 {
-  "title": "Rocklen Institute Website",
-  "name": "rocklen.institute",
+  "title": "Rocklen Website",
+  "name": "rocklen-website",
   "version": "1.0.0-beta.0",
   "scripts": {
     "start": "npx gulp watch",
     "build": "npx gulp"
   },
-  "description": "Source code for the https://rocklen.institute website.",
+  "description": "Source code for the https://incanta.games/rocklen website.",
   "keywords": [
     "rocklen",
     "institute",
@@ -16,19 +16,19 @@
     "vr",
     "virtual reality"
   ],
-  "homepage": "https://rocklen.institute",
+  "homepage": "https://incanta.games/rocklen",
   "bugs": {
-    "url": "https://github.com/seeseplusplus/rocklen.institute/issues",
-    "email": "admin@rocklen.institute"
+    "url": "https://github.com/IncantaGames/rocklen-website/issues",
+    "email": "admin@incanta.games"
   },
   "license": "UNLICENSED",
-  "author": "SeesePlusPlus LLC",
+  "author": "Incanta Games",
   "contributors": [
     "Mike Seese (http://github.com/seesemichaelj/)"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/seeseplusplus/rocklen.institute.git"
+    "url": "https://github.com/IncantaGames/rocklen-website.git"
   },
   "dependencies": {
     "bootstrap": "4.3.1",
