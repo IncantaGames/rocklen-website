@@ -18,6 +18,15 @@
 
     #logo {
       height: 2.8em;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    #subtitle {
+      font-size: 0.6em;
+      margin-left: 0.5rem;
+      font-weight: normal;
+      display: block;
     }
 
     &.vr-game {
@@ -43,13 +52,18 @@
     }
   }
   &.navbar-shrink {
+    background-color: $offwhite;
     box-shadow: 0 1px 20px 0 rgba(46,61,73,.2);
+
+    #logo {
+      opacity: 100;
+    }
   }
   @media (min-width: 992px) {
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background-color: $offwhite;
+    background-color: transparent;
     .navbar-brand {
       padding: .5rem 0;
       color: $black;
@@ -77,6 +91,17 @@
         color: $primary;
         outline: none;
         border-bottom: 0.25rem solid $primary;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .navbar-brand {
+      #subtitle {
+        vertical-align: sub;
+        display: inline;
+        font-size: 0.8em;
+        margin-left: 1rem;
       }
     }
   }

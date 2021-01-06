@@ -1,11 +1,13 @@
 @import 'variables.scss';
 @import 'mixins.scss';
 @import 'navbar.scss';
+@import 'masthead.scss';
 @import 'buttons.scss';
-@import 'mission.scss';
+@import 'about.scss';
 @import 'curriculum.scss';
 @import 'apply.scss';
 @import 'contact.scss';
+@import 'media.scss';
 
 body {
   font-family: 'Nunito';
@@ -24,6 +26,10 @@ a {
 
 .bg-black {
   background-color: $black !important;
+}
+
+.bg-pitch-black {
+  background-color: #000 !important;
 }
 
 .bg-primary {

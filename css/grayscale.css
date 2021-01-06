@@ -1,7 +1,7 @@
 /*!
  * Rocklen Institute Website v1.0.0-beta.0 (https://rocklen.institute)
  * Copyright 2013-2019 Start Bootstrap
- * Copyright 2020-2020 SeesePlusPlus LLC
+ * Copyright 2020-2021 SeesePlusPlus LLC
  * All Rights Reserved (https://github.com/SeesePlusPlus/rocklen.institute#copyright-and-license)
  */
 
@@ -30,6 +30,15 @@
 
 #mainNav .navbar-brand #logo {
   height: 2.8em;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#mainNav .navbar-brand #subtitle {
+  font-size: 0.6em;
+  margin-left: 0.5rem;
+  font-weight: normal;
+  display: block;
 }
 
 #mainNav .navbar-brand.vr-game {
@@ -52,7 +61,12 @@
 }
 
 #mainNav.navbar-shrink {
+  background-color: #f5f5f5;
   box-shadow: 0 1px 20px 0 rgba(46, 61, 73, 0.2);
+}
+
+#mainNav.navbar-shrink #logo {
+  opacity: 100;
 }
 
 @media (min-width: 992px) {
@@ -60,7 +74,7 @@
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background-color: #f5f5f5;
+    background-color: transparent;
   }
   #mainNav .navbar-brand {
     padding: .5rem 0;
@@ -92,6 +106,71 @@
   }
 }
 
+@media (min-width: 768px) {
+  #mainNav .navbar-brand #subtitle {
+    vertical-align: sub;
+    display: inline;
+    font-size: 0.8em;
+    margin-left: 1rem;
+  }
+}
+
+.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: url("../img/rocklen-hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.masthead h1 {
+  font-family: "Varela Round";
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.masthead .logo {
+  width: 50%;
+}
+
+.masthead h2 {
+  max-width: 50%;
+  font-size: 1.25em;
+  text-shadow: 1px 1px #00000052;
+}
+
+@media (min-width: 768px) {
+  .masthead h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+    padding: 0;
+  }
+  .masthead h1 {
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.8rem;
+  }
+  .masthead h2 {
+    font-size: 2em;
+    text-shadow: 2px 2px #00000052;
+  }
+}
+
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
@@ -119,11 +198,11 @@
   background-color: #0b79c6 !important;
 }
 
-.mission-section {
+.about-section {
   padding-top: 10rem;
 }
 
-.mission-section p {
+.about-section p {
   margin-bottom: 5rem;
   text-align: justify;
 }
@@ -200,6 +279,10 @@
   font-weight: bold;
 }
 
+.contact-section .social {
+  margin-top: 2rem;
+}
+
 .contact-section .social a {
   text-align: center;
   height: 3rem;
@@ -216,6 +299,37 @@
 
 .contact-section .social a:active {
   color: #fff;
+}
+
+.media-section {
+  padding: 10rem 0;
+}
+
+.media-section .featured-text {
+  padding: 2rem;
+}
+
+@media (min-width: 992px) {
+  .media-section .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #2ba0f3;
+  }
+}
+
+.media-section .media-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+
+@media (min-width: 992px) {
+  .media-section .media-text {
+    padding: 5rem;
+  }
+  .media-section .media-text hr {
+    border-color: #2ba0f3;
+    border-width: .25rem;
+    width: 30%;
+  }
 }
 
 body {
@@ -235,6 +349,10 @@ a:focus, a:hover {
 
 .bg-black {
   background-color: #161616 !important;
+}
+
+.bg-pitch-black {
+  background-color: #000 !important;
 }
 
 .bg-primary {
